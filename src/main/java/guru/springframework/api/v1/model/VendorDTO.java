@@ -1,8 +1,13 @@
 package guru.springframework.api.v1.model;
 
+import io.swagger.annotations.ApiModelProperty;
+
 public class VendorDTO {
 
+    @ApiModelProperty(value = "The vendor's name")
     private String name;
+
+    @ApiModelProperty(value = "The vendor's url")
     private String url;
 
     public String getName() {
